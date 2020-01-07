@@ -10,8 +10,16 @@ Foo<Integer> foo= new Foo<>(132);
 //c'est une reification du type
 int[]tab= new int[2];
 String[] tabs = new String[2];
-System.out.println(tab.getClass());
+System.out.println(foo.getClass());
 	}
 
 }
 
+/*
+ * console
+ * class [I                     si  System.out.println(tab.getClass());
+ * class [Ljava.lang.String;    si System.out.println(tabs.getClass());
+ * class fr.gtm.syntaxe.Foo     si System.out.println(foo.getClass());
+ * 
+ * 
+ */
